@@ -1,0 +1,269 @@
+body {
+  font-family: 'Calibri', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0ffeb; /* Light aqua background */
+  color: #333; /* Dark grey text */
+}
+
+h4{
+  font-family: 'DM Serif Display', serif;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.multi-step-form {
+  max-width: 1000px; /* Increased overall form width */
+  margin: 50px auto; /* Center the form */
+  padding: 30px;
+  padding-left: 40px; /* Added 10px padding on the left */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  display: none; /* Hide all cards by default */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card.active {
+  display: block; /* Show only active card */
+}
+
+.step-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #000; /* Black text */
+}
+
+.form-content {
+  display: flex;
+  align-items: center;
+}
+
+.image-container {
+  flex: 0 0 50%; /* Adjust image container width */
+  padding-right: 20px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.form-details {
+  flex: 1; /* Take remaining space */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #333; /* Dark grey text */
+}
+
+input {
+  width: 100%; /* Full width input */
+  padding: 12px;
+  border: 1px solid #8ac291; /* Light green border */
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333; /* Dark grey text */
+  
+}
+
+button {
+  padding: 12px 24px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.next,
+button.previous {
+  background-image: linear-gradient(to right, #52be80, #0ea552); /* Light green gradient */
+  color: #fff;
+}
+
+button.previous {
+  background-image: linear-gradient(to right, #52be80, #0ea552); /* Light green to greenish blue gradient */
+}
+.gender-button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #000000; /* Dark grey text */
+ 
+}
+
+.gender-button:hover {
+  background-color: #52be80; /* Light green on hover */
+}
+
+.gender-button.selected {
+  background-image: linear-gradient(to right, #0ab187, #056d5c); /* Dark green gradient when selected */
+  color: #fff; /* White text when selected */
+}
+.multi-step-form {
+  max-width: 1200px; /* Maximum width for the form */
+  margin: 50px auto; /* Center the form horizontally */
+  padding: 60px; /* Padding for content inside the form */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Set the form width to 90% of the viewport width */
+  height: 70vh; /* Set height to 70% of viewport height */
+  overflow-y: auto; /* Enable vertical scroll if content exceeds viewport height */
+}
+
+
+
+/* Ensure proper vertical alignment for radio buttons and labels */
+.radio-group {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  margin-bottom: 10px; /* Add spacing between options */
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 10px; /* Add spacing between radio button and label */
+  align-self: center; /* Align radio button vertically centered */
+  width: 20px; /* Set a fixed width for radio button */
+  height: 20px; /* Set a fixed height for radio button */
+}
+
+
+.medicine-button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #000000; /* Dark grey text */
+ 
+}
+.medicine-button:hover {
+  background-color: #52be80; /* Light green on hover */
+}
+
+.medicine-button.selected {
+  background-image: linear-gradient(to right, #0ab187, #056d5c); /* Dark green gradient when selected */
+  color: #fff; /* White text when selected */
+}
+
+.stress-button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #000000; /* Dark grey text */
+ 
+}
+
+.stress-button:hover {
+  background-color: #52be80; /* Light green on hover */
+}
+
+.stress-button.selected {
+  background-image: linear-gradient(to right, #0ab187, #056d5c); /* Dark green gradient when selected */
+  color: #fff; /* White text when selected */
+}
+
+
+
+
+
+
+
+
+
+.hormone-button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #000000; /* Dark grey text */
+ 
+}
+.mhormone-button:hover {
+  background-color: #52be80; /* Light green on hover */
+}
+
+.hormone-button.selected {
+  background-image: linear-gradient(to right, #0ab187, #056d5c); /* Dark green gradient when selected */
+  color: #fff; /* White text when selected */
+}
+
+.meal-button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #000000; /* Dark grey text */
+ 
+}
+
+.meal-button:hover {
+  background-color: #52be80; /* Light green on hover */
+}
+
+.meal-button.selected {
+  background-image: linear-gradient(to right, #0ab187, #056d5c); /* Dark green gradient when selected */
+  color: #fff; /* White text when selected */
+}
+
+.form-details-main {
+  flex: 1; /* Take remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  text-align: center; /* Align text to the right */
+}
+
+.form-details-main button {
+  align-self: center; /* Align button to the right */
+}
+
+.form-details-main p{
+  font-size: larger;
+}
+
+.form-details-main h3{
+  font-family: 'DM Serif Display', serif;
+  font-size: 40px;
+  margin-bottom: 0px;
+  color: #000; /* Black text */
+}
+
+
+/* this is how you view it together bro */
+
+/* .card {
+  display: flex;
+  align-items: center;
+} */

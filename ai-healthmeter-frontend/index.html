@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-Page Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="multi-step-form">
+      <!-- New first page (card) -->
+      <div class="card active">
+        <div class="form-content">
+          <div class="image-container">
+            <img
+              src="D:\fp\bas\js-multistep-form-main\js-multistep-form-main\images\1.png"
+              alt="Placeholder Image"
+            />
+          </div>
+          <div class="form-details-main">
+            <h3 class="step-title">Ai-inspired Health-Meter</h3>
+            <h4>"Harnessing AI for Healthier Living"</h4>
+            <p>
+              Gain personalized insights with the Diabetes Health Meter for
+              effective management of diabetes.<br />
+              Empower yourself with proactive lifestyle choices to take control
+              of your well-being.
+            </p>
+            <button class="next">Get Started</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Existing form pages -->
+      <div class="card">
+        <div class="form-content">
+          <div class="image-container">
+            <img
+              src="D:\fp\bas\js-multistep-form-main\js-multistep-form-main\images\2.png"
+              alt="Placeholder Image"
+            />
+          </div>
+          <div class="form-details">
+            <h3 class="step-title">Step 1: Personal Information</h3>
+            <p>Let us get to know you</p>
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" name="firstName" id="firstName" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" name="lastName" id="lastName" required />
+            </div>
+            <button class="previous">Previous</button>
+            <button class="next">Next</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more form pages as needed -->
+      <div class="card">
+        <div class="form-content">
+          <div class="image-container">
+            <img
+              src="D:\fp\bas\js-multistep-form-main\js-multistep-form-main\images\3.png"
+              alt="Placeholder Image"
+            />
+          </div>
+          <div class="form-details">
+            <h3 class="step-title">Step 2: General Details</h3>
+            <div class="form-group">
+              <label>Gender</label>
+              <div class="gender-options">
+                <button type="button" class="gender-button" data-value="male">
+                  Male
+                </button>
+                <button type="button" class="gender-button" data-value="female">
+                  Female
+                </button>
+                <input type="hidden" name="gender" id="genderInput" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="age">Age</label>
+              <input
+                type="number"
+                name="age"
+                id="age"
+                min="18"
+                max="110"
+                required
+              />
+            </div>
+            <button class="previous">Previous</button>
+            <button class="next">Next</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example of another form page (you can add more pages similarly) -->
+      <div class="card">
+        <div class="form-content">
+          <div class="image-container">
+            <img
+              src="D:\fp\bas\js-multistep-form-main\js-multistep-form-main\images\4.png"
+              alt="Placeholder Image"
+            />
+          </div>
+          <div class="form-details">
+            <h3 class="step-title">Step 3: Physical Details</h3>
+            <div class="form-group">
+              <label for="height">Height (in centi-meters)</label>
+              <input
+                type="number"
+                name="height"
+                id="height"
+                step="0.01"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="weight">Weight (in kilograms)</label>
+              <input
+                type="number"
+                name="weight"
+                id="weight"
+                step="0.01"
+                required
+              />
+            </div>
+            <button class="previous">Previous</button>
+            <button class="next">Next</button>
+            <!-- <button type="submit">Submit</button> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="form-content">
+          <div class="image-container">
+            <img
+              src="D:\fp\bas\js-multistep-form-main\js-multistep-form-main\images\5.png"
+              alt="Placeholder Image"
+            />
+          </div>
+          <div class="form-details">
+            <h3 class="step-title">Health Analysis</h3>
+            <p>On an average basis, how many hours do you sleep at night?</p>
+            <div class="form-group radio-group">
+              <label>
+                <input type="radio" name="sleep-duration" value="less-than-4" />
+                Less than 4 hours
+              </label>
+              <label>
+                <input type="radio" name="sleep-duration" value="4-5" />
+                4 - 5 hours
+              </label>
+              <label>
+                <input type="radio" name="sleep-duration" value="5-6" />
+                5 - 6 hours
+              </label>
+              <label>
+                <input type="radio" name="sleep-duration" value="6-7" />
+                6 - 7 hours
+              </label>
+              <label>
+                <input type="radio" name="sleep-duration" value="7+" />
+                Over 7 hours
+              </label>
+            </div>
+
+            <button class="previous">Previous</button>
+            <button class="next">Next</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more form pages as needed -->
+      <div class="card">
+        <div class="form-content">
+          <div class="image-container">
+            <img
+              src="D:\fp\bas\js-multistep-form-main\js-multistep-form-main\images\6.png"
+              alt="Placeholder Image"
+            />
+          </div>
+          <div class="form-details">
+            <h3 class="step-title">Health Analysis</h3>
+            <div class="form-group">
+              <p>Do you take any medication?</p>
+              <label>Medicine type</label>
+              <div class="meds-options">
+                <button type="button" class="medicine-button" data-value="none">
+                  None
+                </button>
+                <button type="button" class="medicine-button" data-value="oral">
+                  Oral
+                </button>
+                <button
+                  type="button"
+                  class="medicine-button"
+                  data-value="insulin"
+                >
+                  Insulin
+                </button>
+                <input
+                  type="hidden"
+                  name="medicine"
+                  id="medicineInput"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Stress Levels</label>
+              <div class="stress-options">
+                <button type="button" class="stress-button" data-value="low">
+                  Low
+                </button>
+                <button type="button" class="stress-button" data-value="medium">
+                  Medium
+                </button>
+                <button type="button" class="stress-button" data-value="high">
+                  High
+                </button>
+                <input type="hidden" name="stress" id="stressInput" required />
+              </div>
+            </div>
+            <button class="previous">Previous</button>
+            <button class="next">Next</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="form-content">
+          <div class="image-container">
+            <img
+              src="D:\fp\bas\js-multistep-form-main\js-multistep-form-main\images\7.png"
+              alt="Placeholder Image"
+            />
+          </div>
+          <div class="form-details">
+            <h3 class="step-title">Health Analysis</h3>
+            <p>On Average Basis how often do you exercise?</p>
+            <div class="form-group radio-group">
+              <label>
+                <input type="radio" name="exercise" value="less-than-4" />
+                Rarely
+              </label>
+              <label>
+                <input type="radio" name="exercise" value="4-5" />
+                2 times a week
+              </label>
+              <label>
+                <input type="radio" name="exercise" value="5-6" />
+                3 times a week
+              </label>
+              <label>
+                <input type="radio" name="exercise" value="6-7" />
+                5 - 6 times a week
+              </label>
+              <label>
+                <input type="radio" name="exercise" value="7+" />
+                Everyday
+              </label>
+            </div>
+
+            <button class="previous">Previous</button>
+            <button class="next">Next</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more form pages as needed -->
+      <div class="card">
+        <div class="form-content">
+          <div class="image-container">
+            <img
+              src="D:\fp\bas\js-multistep-form-main\js-multistep-form-main\images\9.png"
+              alt="Placeholder Image"
+            />
+          </div>
+          <div class="form-details">
+            <h3 class="step-title">Health Analysis</h3>
+            <div class="form-group">
+              <p>Do you take your meals at a fixed time?</p>
+              <label>Meal type</label>
+              <div class="meal-timings">
+                <button type="button" class="meal-button" data-value="regular">
+                  Regular
+                </button>
+                <button
+                  type="button"
+                  class="meal-button"
+                  data-value="irregular"
+                >
+                  Irregular
+                </button>
+                <input type="hidden" name="meal" id="mealInput" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Hormone change</label>
+              <div class="hormone">
+                <button type="button" class="hormone-button" data-value="none">
+                  None
+                </button>
+                <button type="button" class="hormone-button" data-value="mild">
+                  Mild
+                </button>
+                <button
+                  type="button"
+                  class="hormone-button"
+                  data-value="significant"
+                >
+                  Significant
+                </button>
+                <input
+                  type="hidden"
+                  name="hormone"
+                  id="hormoneInput"
+                  required
+                />
+              </div>
+            </div>
+            <button class="previous">Previous</button>
+            <!-- <button class="next">Next</button> -->
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example of another form page (you can add more pages similarly) -->
+      <div class="card">
+        <div class="form-content">
+          <div class="image-container">
+            <img
+              src="D:\fp\bas\js-multistep-form-main\js-multistep-form-main\images\8.png"
+              alt="Placeholder Image"
+            />
+          </div>
+          <div class="form-details">
+            <h3 class="step-title">Diagnosis</h3>
+            <p>This is going to be the result</p>
+            <button class="/">Recheck</button>
+
+            <!-- <button type="submit">Submit</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
